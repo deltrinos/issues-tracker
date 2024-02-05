@@ -1,0 +1,87 @@
+
+
+POST http://localhost:8000/issues
+Content-Type: application/json
+
+[
+        [
+            { "toto": 42}
+        ]
+]
+
+####
+
+POST http://localhost:8000/issues
+Content-Type: application/json
+
+[
+        {
+                "video": "video-1234",
+                "category": "news",
+                "userId": 12345,
+                "comment": "issue #1"
+        },
+        {
+                "video": "video-1234",
+                "category": "news",
+                "userId": 345234,
+                "comment": "issue #1"
+        },
+        {
+                "video": "video-1234",
+                "category": "news",
+                "userId": 424200,
+                "comment": "issue #1"
+        },
+        {
+                "video": "video-2435",
+                "category": "games",
+                "userId": 345345,
+                "comment": "issue #1"
+        }
+]
+
+
+###
+
+POST http://localhost:8000/change-status/ready
+Content-Type: application/json
+
+###
+
+POST http://localhost:8000/create-ticket/ThirdPartyApp1/1
+Content-Type: application/json
+
+###
+
+POST http://localhost:8000/create-ticket/ThirdPartyApp2/1
+Content-Type: application/json
+
+
+###
+
+POST http://localhost:8000/change-status/open
+Content-Type: application/json
+
+###
+
+POST http://localhost:8000/update-ticket/ThirdPartyApp1/1
+Content-Type: application/json
+
+###
+
+POST http://localhost:8000/update-ticket/ThirdPartyApp2/2
+Content-Type: application/json
+
+###
+
+POST http://localhost:8000/change-status/closed
+Content-Type: application/json
+
+###
+
+POST http://localhost:8000/close-ticket/ThirdPartyApp1/1
+Content-Type: application/json
+
+
+###
